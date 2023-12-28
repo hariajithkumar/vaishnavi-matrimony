@@ -1,0 +1,189 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-style: normal;
+}
+
+.container-40 {
+    max-width: 40% !important;
+    margin: 0 auto;
+}
+
+.container-60 {
+    max-width: 60% !important;
+    margin: 0 auto;
+}
+
+.container-75 {
+    max-width: 75% !important;
+    margin: 0 auto;
+}
+
+.container-80 {
+    max-width: 80% !important;
+    margin: 0 auto;
+}
+
+.container-85 {
+    max-width: 85% !important;
+    margin: 0 auto;
+}
+
+.container-90 {
+    max-width: 90% !important;
+    margin: 0 auto;
+}
+
+.container-95 {
+    max-width: 95% !important;
+    margin: 0 auto;
+}
+
+.container-98 {
+    max-width: 98% !important;
+}
+
+.container-100 {
+    max-width: 100% !important;
+}
+
+
+
+/* header css  start  */
+.header-section{
+    background: #0eb04d;
+    z-index: 100;
+}
+.logo-section{
+    width: 10%;
+}
+.logo-img{
+    width: 50%;
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.nav-item a {
+    color: #FFF !important;
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav-item .active {
+    color: #fdba11 !important;
+}
+.nav-item a:hover {
+    color: #fdba11 !important;
+}
+
+.nav-item .active:hover {
+    color: #FFF !important;
+}
+
+.register-btn{
+    background: #fdba11;
+    color:#FFF;
+}
+.register-btn:hover{
+    background: #FFF;
+    color: #fdba11;
+}
+
+
+
+/* Banner carousel css start  */
+
+.carousel-item img{
+    /* height: max-content; */
+    height: 85vh;
+    opacity: .9;
+}
+.matrimony-carousel img{
+    position: relative;
+}
+.matrimony-carousel .slide-top{
+    font-size: 50px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.matrimony-carousel .slide-bottom{
+    font-size: 50px;
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/***** Slide Left *****/
+.slide-top {
+    color: #FFF;
+    animation: 2s slide-top;
+
+  }
+  @keyframes slide-top {
+    from {
+      margin-top: -100%;
+    }
+    to {
+      margin-top: 0%;
+    }
+  }
+  .slide-bottom {
+    color: #FFF;
+    animation: 3s slide-bottom;
+
+  }
+  @keyframes slide-bottom {
+    from {
+      margin-bottom: -100%;
+    }
+    to {
+      margin-bottom: 0%;
+    }
+  }
+  
+.zoom-in {
+    /* transform: scale(1.2); */
+    animation: zoomInOut 8s infinite alternate;
+
+}
+
+@keyframes zoomInOut {
+    0% {
+
+        transform: scale(1);
+        overflow: hidden;
+    }
+
+    50% {
+        transform: scale(1.2);
+        overflow: hidden;
+    }
+
+    100% {
+
+        transform: scale(1);
+        overflow: hidden;
+    }
+}
+
+
+
+/* footer css start  */
+
+footer{
+    background: #0eb04d;
+    padding: 20px 0px;
+}
+footer p{
+    color: #FFF;
+    font-size: 20px;
+}
+footer li{
+    color: #fdba11;
+    font-size: 20px;
+}

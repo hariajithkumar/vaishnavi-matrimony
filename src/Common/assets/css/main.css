@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-style: normal;
+}
+
+.container-40 {
+    max-width: 40% !important;
+    margin: 0 auto;
+}
+
+.container-60 {
+    max-width: 60% !important;
+    margin: 0 auto;
+}
+
+.container-75 {
+    max-width: 75% !important;
+    margin: 0 auto;
+}
+
+.container-80 {
+    max-width: 80% !important;
+    margin: 0 auto;
+}
+
+.container-85 {
+    max-width: 85% !important;
+    margin: 0 auto;
+}
+
+.container-90 {
+    max-width: 90% !important;
+    margin: 0 auto;
+}
+
+.container-95 {
+    max-width: 95% !important;
+    margin: 0 auto;
+}
+
+.container-98 {
+    max-width: 98% !important;
+}
+
+.container-100 {
+    max-width: 100% !important;
+}
+
+
+/* * home page css start  */
+section{
+    /* background: #454141; */
+    background: #F6F6F6;
+}
+.profile-card {
+    height: 50vh;
+    border-radius: 16px !important;
+    border: none !important;
+    background: #FFF;
+    box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06) !important;
+}
+.profile-card img{
+    border-radius: 20px;
+    height: 50vh !important;
+}
+
+.profile-card p{
+    padding: 50px 0px;
+    font-size: 25px;
+    color: #0eb04d;
+    font-weight: 400;
+}
