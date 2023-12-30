@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto:ital,wght@1,300&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Roboto;
+    font-family: Inter !important;
     font-style: normal;
 }
 
@@ -53,10 +52,11 @@
 
 
 /* * home page css start  */
-section{
+section {
     /* background: #454141; */
-    background: #F6F6F6;
+    /* background: #F6F6F6; */
 }
+
 .profile-card {
     height: 50vh;
     border-radius: 16px !important;
@@ -64,14 +64,37 @@ section{
     background: #FFF;
     box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06) !important;
 }
-.profile-card img{
+
+.profile-card img {
     border-radius: 20px;
     height: 50vh !important;
 }
 
-.profile-card p{
+.profile-card p {
     padding: 50px 0px;
     font-size: 25px;
     color: #0eb04d;
     font-weight: 400;
+}
+
+.profile-section h3 {
+    color: #3B3B3B;
+    font-family: Roboto !important;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.profile-section hr {
+    width: 30%;
+    border: 2px solid #0EB04D;
+}
+
+.profile-section h5 {
+    color: var(--Black, #000);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
 }

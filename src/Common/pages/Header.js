@@ -12,7 +12,7 @@ import { faSackDollar } from '@fortawesome/free-solid-svg-icons';
 
 // image path 
 
-import logo from '../assets/image/logo.jpeg'
+import logo from '../assets/image/logo.png'
 
 
 // state change 
@@ -22,6 +22,7 @@ import { setClass1Hide } from '../../Redux/CreateSlice';
 function Header() {
 
     const { isClass1Show } = useSelector((state) => state.matrimony_profile)
+    const[isNavshow,setNavshow] = useState(false)
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isSticky, setIsSticky] = useState(false);
 
@@ -37,19 +38,11 @@ function Header() {
             dispatch(setClass1Hide(false))
         }
     }
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         if (window.scrollY >= 60) {
-    //             setIsSticky(true);
-    //         } else {
-    //             setIsSticky(false);
-    //         }
-    //     };
-    //     window.addEventListener('scroll', handleScroll);
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
+
+    const navBtn = () => {
+        setNavshow(true)
+    }
+
 
     return (
         <>
@@ -57,7 +50,7 @@ function Header() {
                 <nav className="navbar navbar-expand-lg container-90">
                     <div className="container-fluid">
                         <a className="navbar-brand logo-section" href="#"><img src={logo} className='logo-img' /></a>
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={navBtn}>
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -79,7 +72,8 @@ function Header() {
                                 </li>
                             </ul>
                             <form className="d-flex">
-                                <button className="btn register-btn" type="button">பதிவு</button>
+                                <button className="btn login-btn" type="button">Login</button>
+                                <button className="btn register-btn" type="button">Register Now</button>
                             </form>
                         </div>
                     </div>
