@@ -38,7 +38,9 @@ function Header() {
             dispatch(setClass1Hide(false))
         }
     }
-
+    const register = () => {
+        navigate('/registerForm')
+    }
     const navBtn = () => {
         setNavshow(true)
     }
@@ -73,7 +75,7 @@ function Header() {
                             </ul>
                             <form className="d-flex">
                                 <button className="btn login-btn" type="button">Login</button>
-                                <button className="btn register-btn" type="button">Register Now</button>
+                                <button className="btn register-btn" type="button" onClick={register}>Register Now</button>
                             </form>
                         </div>
                     </div>
