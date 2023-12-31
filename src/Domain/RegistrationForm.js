@@ -45,7 +45,7 @@ const RegistrationForm = () => {
           <div className="w-100 position-absolute top-50 start-50 translate-middle">
             <div className="progress" style={{ height: '.25rem' }}>
               <div
-                className="progress-bar bg-primary"
+                className="progress-bar"
                 id="progress-tab"
                 role="progressbar"
                 aria-valuenow={activeTab * 25}
@@ -82,8 +82,8 @@ const RegistrationForm = () => {
             </div>
           ))}
         </div>
-        {activeTab > 1 ? <><button type='button' onClick={preview}>preview</button></> : <></>}
-        {activeTab > 4 ? <></> : <><button type='button' onClick={next}>next</button></>}
+        {activeTab > 1 ? <><button type='button' className='preview-btn' onClick={preview}>preview</button></> : <></>}
+        {activeTab > 4 ? <></> : <><button type='button' className='next-btn' onClick={next}>next</button></>}
       </div>
     </div>
   );
