@@ -125,13 +125,11 @@
         width: 100% !important;
     }
     .profile-section h3 {
-        font-size: 28px;
-        line-height: 38px;
+        font-size: 24px;
+        line-height: 34px;
     }
     .profile-section h5 {
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 32px;
+        font-size: 14px;
+        line-height: 24px;
     }
 }

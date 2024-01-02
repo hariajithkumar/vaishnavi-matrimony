@@ -304,5 +304,9 @@
       .footer-logo img {
           width: 25% !important;
       }
+      .footer-bottom p {
+        font-size: 13px;
+        line-height: 23px;
+    }
 
   }
