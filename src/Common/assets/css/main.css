@@ -52,10 +52,10 @@
 
 
 /* * home page css start  */
-section {
-    /* background: #454141; */
-    /* background: #F6F6F6; */
-}
+/* section {
+    background: #454141;
+    background: #F6F6F6;
+} */
 
 .profile-card {
     height: 50vh;
@@ -97,4 +97,41 @@ section {
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
+}
+
+
+
+/* responsive css start  */
+
+@media (max-width: 992px) {}
+
+@media (max-width: 778px) {
+    .profile-section img{
+        width: 100% !important;
+    }
+    .profile-section h3 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .profile-section h5 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+    }
+}
+@media (max-width: 556px) {
+    .profile-section img{
+        width: 100% !important;
+    }
+    .profile-section h3 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .profile-section h5 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+    }
 }

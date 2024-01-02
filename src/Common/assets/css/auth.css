@@ -4,7 +4,12 @@
     color: #FFF !important;
 }
 .nav-item .active{
-    background: #EA7B10;
+    /* background: #EA7B10; */
+    border: none;
+    color: #EA7B10 !important;
+}
+.time-line .active{
+    background: #EA7B10 !important;
     border: none;
     color: #FFF !important;
 }

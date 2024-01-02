@@ -23,12 +23,12 @@ function Home() {
             <section className='py-5'>
                 <div className='container-90'>
                     <div className='row m-0 profile-section'>
-                        <div className='col-8'>
+                        <div className='col-lg-8 col-12'>
                             <div className='row m-0'>
-                                <div className='col-5 d-flex align-items-stretch'>
+                                <div className='col-lg-5 col-md-5  col-12 d-flex align-items-stretch'>
                                     <img src={owner} className='w-100 ' />
                                 </div>
-                                <div className='col-7 py-5'>
+                                <div className='col-lg-7 col-md-7 col-12 py-5'>
                                     <h3>எங்களது சேவை</h3>
                                     <hr />
                                     <div className='row m-0'>
@@ -60,7 +60,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-4'>
+                        <div className='col-lg-4 col-12 mt-lg-0 mt-3'>
                             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0EzhlUTldmk?si=K7ex7ag48pnp56Bs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
