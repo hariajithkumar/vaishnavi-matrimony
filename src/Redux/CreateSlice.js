@@ -14,17 +14,26 @@ export const CrateSlice = createSlice({
         registerDetails: {
             name: "",
             gender:'',
-            brith_data:'',
-            brith_month:'',
-            brith_year:'',
-            mobile_code:'',
+            dob:'',
             mobile_number:'',
             email: "",
-            regligion: "",
+            city:'',
+            dist:'',
+            qualification:'',
+            fathername:'',
+            mothername:'',
+            work:'',
+            workplace:'',
+            salary:'',
+            father_work:'',
+            mother_work:'',
+            religion: "",
             caste: "",
             password: "",
-            confirm_password: ""
+            confirm_password: "",
+            profile_image: '',
         },
+        cropImage:[],
     },
 
     reducers: {
@@ -43,9 +52,12 @@ export const CrateSlice = createSlice({
         setregisterDetails:(state,action)=>{
             state.registerDetails = action.payload
         },
+        setCropImage:(state,action)=>{
+            state.cropImage = action.payload
+        }
     }
 })
 
-export const { setClass1Hide, setprofileDetails,setloginDetails,setlogoutDetails,setregisterDetails } = CrateSlice.actions
+export const { setClass1Hide, setprofileDetails,setloginDetails,setlogoutDetails,setregisterDetails,setCropImage } = CrateSlice.actions
 export default CrateSlice.reducer
 

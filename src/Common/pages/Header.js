@@ -41,6 +41,9 @@ function Header() {
     const register = () => {
         navigate('/registerForm')
     }
+    const login = () =>{
+        navigate('/login')
+    }
     const navBtn = () => {
         setNavshow(true)
     }
@@ -74,7 +77,7 @@ function Header() {
                                 </li>
                             </ul>
                             <form className="d-flex">
-                                <button className="btn login-btn" type="button">Login</button>
+                                <button className="btn login-btn" type="button" onClick={login}>Login</button>
                                 <button className="btn register-btn" type="button" onClick={register}>Register Now</button>
                             </form>
                         </div>
