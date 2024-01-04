@@ -21,17 +21,17 @@ function Login() {
         <div>
             <Header />
             <div className='container-70 '>
-                <div className='register-field'>
+                <div className='login-field'>
                     <div className='row m-0 p-3'>
                         <div className='col-lg-6 p-0'>
-                            <img src={slider1} className='w-100' />
+                            <img src={slider1} className='w-100 rounded-3' />
                         </div>
                         <div className='col-lg-6'>
                             <h1>Login Now</h1>
                             <p>Enter your phone number & password to login</p>
                             <form>
                                 <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">phone number</label>
+                                    <label for="exampleInputEmail1" class="form-label">Phone number</label>
                                     <input type="text" class="form-control" placeholder='Enter your Phonenumber' />
                                 </div>
                                 <div class="mb-3">

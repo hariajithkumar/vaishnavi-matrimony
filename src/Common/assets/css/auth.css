@@ -202,7 +202,16 @@
       font-weight: 400;
       line-height: 28px;
   }
-
+  .register-form .upload-para {
+    margin: 20px 0px;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
   .success {
       width: 10%;
       margin: 0 auto;
@@ -302,3 +311,59 @@
           stroke-dashoffset: 900;
       }
   }
+
+
+
+
+
+
+
+
+/* login css start  */
+
+.login-field {
+    margin: 50px 0px;
+    background: #FFF;
+    box-shadow: 2px 2px 11px 0px rgba(190, 190, 190, 0.25);
+}
+.login-field h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.login-field p {
+    text-align: start;
+    margin: 20px 0px;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.login-field label {
+    color: #373737;
+    font-family: Inter !important;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.login-field input {
+    padding: 12px 10px;
+    border-radius: 2px;
+    border: 1px solid var(--grey-90, #CFD0D7);
+    background: var(--white-90, #FCFCFD);
+}
+.login-field input::placeholder {
+    padding: 0px 5px;
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}

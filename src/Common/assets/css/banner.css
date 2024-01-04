@@ -29,14 +29,14 @@
 
   .nav-item a {
       color: #000;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 500;
       line-height: normal;
   }
 
   .nav-item .active {
       color: #0EB04D !important;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 600;
       line-height: normal;
   }

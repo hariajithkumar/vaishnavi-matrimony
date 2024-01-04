@@ -52,11 +52,10 @@ const imageSize = (file) => {
     return promise;
 };
 
-console.log(0,imageSize)
+// console.log(0, imageSize)
 const Profileupload = () => {
-    const { registerDetails,cropImage } = useSelector((state) => state.matrimony_profile)
+    const { registerDetails, cropImage } = useSelector((state) => state.matrimony_profile)
     const [image, setImage] = useState(null);
-    // const [cropImage, setCropImage] = useState([]);
     const [cropper, setCropper] = useState();
     const [hideCrop, setHideCrop] = useState(0)
     const [errorMessage, setErrorMessage] = useState('');
@@ -67,14 +66,12 @@ const Profileupload = () => {
     const onDrop = useCallback(async (acceptedFiles) => {
         const file = acceptedFiles[0];
         const imageDimensions = await imageSize(file);
-        // console.log({ imageDimensions, size: niceBytes(file.size) });
         const options = {
             maxSizeMB: 1,
             maxWidthOrHeight: imageDimensions?.width > 1300 ? 1300 : imageDimensions?.width,
             useWebWorker: true,
         };
         const compressedImg = await imageCompression(file, options);
-        console.log(6, niceBytes(compressedImg.size))
         // Convert the compressed image to base64
         const base64String = await convertToBase64(compressedImg);
 
@@ -101,20 +98,10 @@ const Profileupload = () => {
             const croppedDataUrl = cropper.getCroppedCanvas().toDataURL();
             setCroppedImage(croppedDataUrl);
             dispatch(setCropImage([...cropImage, croppedDataUrl]));
-            // dispatch(setregisterDetails({...registerDetails,profile_image:cropImage}))
-            // console.log(0, niceBytes(cropImage).size);
         }
         setImage(null);
     };
-    // if(cropImage.length > 0){
-    //     console.log('ajith',cropImage);
-        // dispatch(setregisterDetails({...registerDetails,profile_image:cropImage}))
-    // }else{
-    //     console.log('kumar',cropImage);
-    // }
-    console.log(registerDetails)
     const { getRootProps, getInputProps } = useDropzone({
-        // image: 'addphoto',
         accept: 'image/*',
         onDrop,
     });
@@ -128,17 +115,24 @@ const Profileupload = () => {
         const updatedFiles = cropImage.filter((file, index) => index !== idToRemove);
         dispatch(setCropImage(updatedFiles));
     };
-    // console.log('ajith',cropImage);
-    // console.log(image)
     return (
         <div>
-            <div {...getRootProps()} style={{ width: '150px', height: '40px', position: 'relative', left: '30px', paddingBottom: '50px', marginTop: '25px' }}>
-                <label htmlFor="upload" className="custom-file-upload">
-                    {/* <input type='file' onClick={selectImage}/> */}
-                    <img src={addphoto} alt="upload" className="w-100 h-100" onClick={selectImage} />
-                    {/* <FontAwesomeIcon icon={faUpload} /> */}
-                </label>
-            </div>
+            {cropImage.length >= 2 ? <></> : <> <div {...getRootProps()} style={{ width: '150px', height: '40px', position: 'relative', left: '30px', paddingBottom: '50px', marginTop: '25px' }}>
+                <div>
+                    <label htmlFor="upload" className="custom-file-upload">
+                        <img src={addphoto} alt="upload" className="w-100 h-100" onClick={selectImage} />
+                    </label>
+                </div>
+
+            </div></>}
+            {/* <div {...getRootProps()} style={{ width: '150px', height: '40px', position: 'relative', left: '30px', paddingBottom: '50px', marginTop: '25px' }}>
+                <div>
+                    <label htmlFor="upload" className="custom-file-upload">
+                         <img src={addphoto} alt="upload" className="w-100 h-100" onClick={selectImage} />
+                    </label>
+                </div>
+
+            </div> */}
             {errorMessage && <p className='mx-4 my-3 text-danger'>{errorMessage}</p>}
             {hideCrop ? <></> : <> {image ? (
                 <Cropper

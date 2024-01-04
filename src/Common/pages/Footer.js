@@ -40,7 +40,7 @@ function Footer() {
                         <h5>Contact</h5>
                         <ul className='p-0'>
                             <li className=''>+91 99949 02887</li>
-                            <li  className=''>+91 90034 10060ம்</li>
+                            <li  className=''>+91 90034 10060</li>
                             <li  className=''><img src={facebook} /> <img src={instagram} className=''/> <img src={x} className=''/> <img src={youtube} /></li>
                         </ul>
                     </div>
