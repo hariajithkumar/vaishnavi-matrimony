@@ -192,6 +192,12 @@
       border: 1px solid var(--grey-90, #CFD0D7);
       /* background: var(--white-90, #FCFCFD); */
   }
+  .profile-section textarea {
+    padding: 12px 10px;
+    border-radius: 2px;
+    border: 1px solid var(--grey-90, #CFD0D7);
+    background: var(--white-90, #FCFCFD);
+}
 
   .register-form input::placeholder {
       padding: 0px 5px;

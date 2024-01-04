@@ -1,0 +1,126 @@
+.package-rate {
+    background: #fff;
+    padding: 0px 0px 30px 0px;
+    box-shadow: 0px 0px 10px 0px #e0e4ea;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        padding-bottom: 50px;
+        box-shadow: 0px 0px 15px -2px #9a9b9e;
+
+        .book-btn {
+            bottom: 10px;
+        }
+
+        .price {
+            padding-top: 10px;
+        }
+
+        img {
+            transform: scale(1.1) rotate(3deg);
+            opacity: .85;
+        }
+
+    }
+
+    .title {
+        color: #88c7b3;
+        font-size: 32px;
+    }
+
+    .thum {
+        overflow: hidden;
+        height: 150px;
+
+        img {
+            max-height: 140px;
+            transition: .4s;
+        }
+    }
+
+    .price {
+        font-size: 40px;
+        padding: 20px 0;
+        color: #0eb04d;
+
+        &:before {
+            content: '₹ ';
+            font-size: 35px;
+        }
+    }
+}
+
+.package-includes {
+    li {
+        padding: 10px;
+        margin: 0;
+        font-weight: 500;
+        transition: all .4s ease-in-out;
+
+        &:before {
+            content: "\f13c";
+            font-family: 'Flaticon';
+            color: #88c7b3;
+            padding-right: 10px;
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #88c7b3;
+        }
+    }
+}
+
+.book-btn {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    margin-left: -95px;
+    padding: 12px 40px;
+    border-radius: 25px;
+    border: 3px solid #EA7B10;
+    overflow: hidden;
+    line-height: 1;
+    font-weight: 600;
+    transition: all .4s ease-in-out;
+    background: #fff;
+
+    &:after {
+        content: '';
+        position: absolute;
+        transition: all 0.3s;
+        width: 0%;
+        top: 0;
+        left: 0;
+        bottom: -5px;
+        background: #0eb04d;
+    }
+
+    &:hover {
+        color: #fff;
+
+        &:after {
+            width: 100%;
+        }
+    }
+
+    span {
+        position: relative;
+        z-index: 5;
+    }
+}
+
+.package-title{
+    background: #EA7B10;
+}
+.package-title h3{
+    padding: 5px 0px;
+    color: #FFF !important;
+}
+.package-title p{
+    color: #FFF !important;
+}
+.price-title{
+    font-size: 30px;
+    padding: 5px 0px;
+    color: #EA7B10 !important; 
+}
